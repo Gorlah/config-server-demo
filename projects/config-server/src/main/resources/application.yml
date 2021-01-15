@@ -1,4 +1,6 @@
 server:
+  error:
+    include-message: always
   port: 8888
 
 spring:
@@ -7,3 +9,4 @@ spring:
       server:
         git:
           uri: ${CONFIG_URI}
+          default-label: main

@@ -1,10 +1,10 @@
-package com.gorlah.microa
+package com.gorlah.microservice
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class MicroAApplicationTests {
+class MicroserviceApplicationTests {
 
 	@Test
 	fun contextLoads() { }

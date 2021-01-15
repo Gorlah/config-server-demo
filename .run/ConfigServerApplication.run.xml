@@ -4,7 +4,7 @@
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.gorlah.configserver.ConfigServerApplication" />
     <option name="ALTERNATIVE_JRE_PATH" />
     <envs>
-      <env name="CONFIG_URI" value="$PROJECT_DIR$/configs" />
+      <env name="CONFIG_URI" value="file://$PROJECT_DIR$/configs" />
     </envs>
     <method v="2">
       <option name="Make" enabled="true" />

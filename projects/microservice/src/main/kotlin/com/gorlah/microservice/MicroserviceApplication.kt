@@ -1,4 +1,4 @@
-package com.gorlah.microa
+package com.gorlah.microservice
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component
 import javax.annotation.PostConstruct
 
 @SpringBootApplication
-class MicroAApplication
+class MicroserviceApplication
 
 fun main(args: Array<String>) {
-	runApplication<MicroAApplication>(*args)
+	runApplication<MicroserviceApplication>(*args)
 }
 
 @Component

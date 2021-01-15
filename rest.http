@@ -1,4 +1,4 @@
-GET http://localhost:8888/micro-a/default
+GET http://localhost:8888/application/default
 Accept: application/json
 
 ###
