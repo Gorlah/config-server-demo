@@ -1,5 +1,5 @@
 rootProject.name = "config-server-demo"
 
-include("config-server")
-include("micro-a")
-include("micro-b")
+include("projects:config-server")
+include("projects:micro-a")
+include("projects:micro-b")
