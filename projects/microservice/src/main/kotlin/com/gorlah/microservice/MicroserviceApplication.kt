@@ -1,7 +1,6 @@
 package com.gorlah.microservice
 
 import com.gorlah.library.logger
-import org.slf4j.Logger
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -20,12 +19,10 @@ fun main(args: Array<String>) {
 @Component
 class Test(@Value("\${property}") private val property: String) {
 
-	private val logger: Logger = logger(Test::class)
+	private val logger = logger(Test::class)
 
 	@PostConstruct
-	fun postConstruct() {
-		logger.info(property)
-	}
+	fun postConstruct() = logger.info(property)
 }
 
 @RestController
