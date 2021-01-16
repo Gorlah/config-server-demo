@@ -10,6 +10,7 @@ spring:
     config:
       server:
         git:
-          uri: ${CONFIG_SERVER_URI}
           default-label: main
+          uri: ${CONFIG_SERVER_URI}
+          search-paths: '{application}'
         bootstrap: true
