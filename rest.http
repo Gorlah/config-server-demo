@@ -1,4 +1,4 @@
-GET http://localhost:8888/application/default
+GET http://localhost:8888/microservice/default
 Accept: application/json
 
 ###

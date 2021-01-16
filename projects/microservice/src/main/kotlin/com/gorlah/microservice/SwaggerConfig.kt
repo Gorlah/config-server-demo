@@ -16,7 +16,7 @@ class SwaggerConfig {
     @Bean
     fun swagger() = Docket(DocumentationType.OAS_30)
         .select()
-        .apis(RequestHandlerSelectors.basePackage("com.gorlah"))
+        .apis(RequestHandlerSelectors.any())
         .paths(PathSelectors.any())
         .build()!!
 }
