@@ -6,6 +6,6 @@ spring:
       server:
         git:
           default-label: main
-          uri: ${CONFIG_SERVER_URI}
+          uri: https://github.com/Gorlah/configs-demo.git
           search-paths: '{application}'
         bootstrap: true

@@ -1,4 +1,23 @@
+# Get 'microservice' configs using 'dev' profile
 GET http://localhost:8888/microservice/dev
+Accept: application/json
+
+###
+
+# Refresh Config Server
+POST http://localhost:8888/actuator/refresh
+Accept: application/json
+
+###
+
+# Refresh microservice
+POST http://localhost:8080/actuator/refresh
+Accept: application/json
+
+###
+
+# Get value of 'property' retrieved from Config Server
+GET http://localhost:8080/property
 Accept: application/json
 
 ###
