@@ -24,6 +24,7 @@ subprojects {
     }
 
     extra["springCloudVersion"] = "2020.0.0"
+    extra["springfoxVersion"] = "3.0.0"
 
     dependencyManagement {
         imports {

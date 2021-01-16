@@ -8,5 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: ${CONFIG_URI}
+          uri: ${CONFIG_SERVER_URI}
           default-label: main
