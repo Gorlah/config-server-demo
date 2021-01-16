@@ -1,6 +1,7 @@
 package com.gorlah.microservice
 
-import org.slf4j.LoggerFactory
+import com.gorlah.library.logger
+import org.slf4j.Logger
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -8,7 +9,6 @@ import org.springframework.stereotype.Component
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 import javax.annotation.PostConstruct
-import kotlin.reflect.KClass
 
 @SpringBootApplication
 class MicroserviceApplication
@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
 @Component
 class Test(@Value("\${property}") private val property: String) {
 
-	private val logger = logger(Test::class)
+	private val logger: Logger = logger(Test::class)
 
 	@PostConstruct
 	fun postConstruct() {
@@ -34,5 +34,3 @@ class Controller {
 	@GetMapping("/hello")
 	fun hello() = "hello'"
 }
-
-fun <T : Any> logger(kClass: KClass<T>) = LoggerFactory.getLogger(kClass.java)!!

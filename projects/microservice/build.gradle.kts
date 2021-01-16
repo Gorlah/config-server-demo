@@ -1,17 +1,17 @@
 plugins {
+    id("org.springframework.boot")
     kotlin("jvm")
     kotlin("plugin.spring")
 }
 
-val springfoxVersion: String by project
-
 dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    implementation("io.springfox:springfox-boot-starter:$springfoxVersion")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("io.springfox:springfox-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.cloud:spring-cloud-starter-config")
+    implementation(kotlin("reflect"))
+    implementation(kotlin("stdlib-jdk8"))
+    implementation(project(":projects:library"))
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
