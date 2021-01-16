@@ -35,4 +35,4 @@ class Controller {
 	fun hello() = "hello'"
 }
 
-fun <T : Any> logger(kClass: KClass<T>) = LoggerFactory.getLogger(kClass::class.java)!!
+fun <T : Any> logger(kClass: KClass<T>) = LoggerFactory.getLogger(kClass.java)!!

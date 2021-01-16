@@ -5,6 +5,7 @@
     <option name="ALTERNATIVE_JRE_PATH" />
     <envs>
       <env name="SERVER_PORT" value="8080" />
+      <env name="SPRING_PROFILES_ACTIVE" value="dev" />
     </envs>
     <method v="2">
       <option name="Make" enabled="true" />

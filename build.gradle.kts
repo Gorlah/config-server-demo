@@ -29,6 +29,11 @@ subprojects {
     dependencyManagement {
         imports {
             mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
+
+            // TODO - This can be removed once spring-cloud-dependencies 2020.0.1 has been released
+            // https://repo.spring.io/release/org/springframework/cloud/spring-cloud-dependencies/
+            // https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-2020.0-Release-Notes
+            mavenBom("org.springframework.cloud:spring-cloud-config-dependencies:3.0.1")
         }
     }
 
