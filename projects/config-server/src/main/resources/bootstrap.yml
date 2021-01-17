@@ -4,8 +4,15 @@ spring:
   cloud:
     config:
       server:
-        git:
-          default-label: main
-          uri: https://github.com/Gorlah/configs-demo.git
-          search-paths: '{application}'
+        vault:
+          authentication: TOKEN
+        composite:
+          - type: vault
+            kv-version: 2
+          - type: git
+            default-label: main
+            uri: ${GIT_REPOSITORY_URI}
+            search-paths: '{application}'
         bootstrap: true
+  profiles:
+    active: composite

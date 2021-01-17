@@ -1,6 +1,13 @@
 # Get 'microservice' configs using 'dev' profile
 GET http://localhost:8888/microservice/dev
 Accept: application/json
+X-Config-Token: myroot
+
+###
+
+GET http://localhost:8888/microservice-dev.yml
+Accept: application/json
+X-Config-Token: myroot
 
 ###
 

@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ConfigServerApplication (Local Git)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="config-server-demo.projects.config-server.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.gorlah.configserver.ConfigServerApplication" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <envs>
+      <env name="SPRING_CLOUD_CONFIG_SERVER_VAULT_TOKEN" value="myroot" />
+      <env name="GIT_REPOSITORY_URI" value="file:///$PROJECT_DIR$/../configs-demo" />
+    </envs>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
