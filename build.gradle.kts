@@ -41,6 +41,7 @@ subprojects {
 
     tasks.withType<JavaCompile> {
         sourceCompatibility = JavaVersion.VERSION_15.toString()
+        targetCompatibility = JavaVersion.VERSION_15.toString()
     }
 
     tasks.withType<KotlinCompile> {
