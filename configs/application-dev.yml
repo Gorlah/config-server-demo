@@ -1,0 +1,12 @@
+property:
+  application-dev.yml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+  error:
+    include-message: always

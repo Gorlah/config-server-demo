@@ -1,0 +1,6 @@
+property:
+  application-prod.yml
+
+server:
+  error:
+    include-message: always

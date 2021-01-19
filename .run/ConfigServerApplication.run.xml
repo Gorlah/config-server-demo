@@ -4,8 +4,7 @@
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.gorlah.configserver.ConfigServerApplication" />
     <option name="ALTERNATIVE_JRE_PATH" />
     <envs>
-      <env name="SPRING_CLOUD_CONFIG_SERVER_VAULT_TOKEN" value="myroot" />
-      <env name="GIT_REPOSITORY_URI" value="https://github.com/Gorlah/configs-demo.git" />
+      <env name="CONFIGS_PATH" value="file:///$PROJECT_DIR$/configs" />
     </envs>
     <method v="2">
       <option name="Make" enabled="true" />

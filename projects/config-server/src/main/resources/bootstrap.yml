@@ -4,15 +4,10 @@ spring:
   cloud:
     config:
       server:
-        vault:
-          authentication: TOKEN
-        composite:
-          - type: vault
-            kv-version: 2
-          - type: git
-            default-label: main
-            uri: ${GIT_REPOSITORY_URI}
-            search-paths: '{application}'
+        native:
+          search-locations:
+            - ${CONFIGS_PATH}
+            - ${CONFIGS_PATH}/{application}
         bootstrap: true
   profiles:
-    active: composite
+    active: native
