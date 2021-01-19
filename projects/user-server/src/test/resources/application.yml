@@ -1,6 +1,2 @@
-spring:
-  application:
-    name: user-server
-
 property:
   test
