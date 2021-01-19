@@ -1,3 +1,6 @@
 spring:
   application:
     name: user-server
+  cloud:
+    vault:
+      uri: http://localhost:8200

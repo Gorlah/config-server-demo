@@ -11,6 +11,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
     implementation("org.springframework.cloud:spring-cloud-starter-config")
+    implementation("org.springframework.cloud:spring-cloud-starter-vault-config")
     implementation(kotlin("reflect"))
     implementation(kotlin("stdlib-jdk8"))
     implementation(project(":projects:commons"))

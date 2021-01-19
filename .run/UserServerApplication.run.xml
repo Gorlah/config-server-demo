@@ -5,6 +5,7 @@
     <option name="ALTERNATIVE_JRE_PATH" />
     <envs>
       <env name="SPRING_PROFILES_ACTIVE" value="dev" />
+      <env name="SPRING_CLOUD_VAULT_TOKEN" value="myroot" />
     </envs>
     <method v="2">
       <option name="Make" enabled="true" />
