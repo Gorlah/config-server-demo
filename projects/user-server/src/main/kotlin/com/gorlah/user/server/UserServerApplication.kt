@@ -1,11 +1,11 @@
-package com.gorlah.microservice
+package com.gorlah.user.server
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class MicroserviceApplication
+class UserServerApplication
 
 fun main(args: Array<String>) {
-	runApplication<MicroserviceApplication>(*args)
+	runApplication<UserServerApplication>(*args)
 }

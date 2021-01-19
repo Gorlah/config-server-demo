@@ -1,4 +1,4 @@
-package com.gorlah.configserver
+package com.gorlah.config.server
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

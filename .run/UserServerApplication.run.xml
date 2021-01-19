@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="UserServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="config-server-demo.projects.user-server.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.gorlah.user.server.UserServerApplication" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <envs>
+      <env name="SPRING_PROFILES_ACTIVE" value="dev" />
+    </envs>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

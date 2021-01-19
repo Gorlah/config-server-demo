@@ -9,6 +9,7 @@ dependencies {
     implementation("io.springfox:springfox-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
     implementation("org.springframework.cloud:spring-cloud-starter-config")
     implementation(kotlin("reflect"))
     implementation(kotlin("stdlib-jdk8"))
