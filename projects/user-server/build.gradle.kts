@@ -13,6 +13,6 @@ dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-config")
     implementation(kotlin("reflect"))
     implementation(kotlin("stdlib-jdk8"))
-    implementation(project(":projects:library"))
+    implementation(project(":projects:commons"))
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }

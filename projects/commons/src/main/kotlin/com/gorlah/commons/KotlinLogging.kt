@@ -1,4 +1,4 @@
-package com.gorlah.library
+package com.gorlah.commons
 
 import org.slf4j.LoggerFactory
 import kotlin.reflect.KClass
