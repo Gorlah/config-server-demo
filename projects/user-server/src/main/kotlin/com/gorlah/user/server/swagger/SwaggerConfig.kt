@@ -1,4 +1,4 @@
-package com.gorlah.user.server
+package com.gorlah.user.server.swagger
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
