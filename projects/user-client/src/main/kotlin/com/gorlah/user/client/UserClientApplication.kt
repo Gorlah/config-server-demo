@@ -17,24 +17,24 @@ import org.springframework.web.bind.annotation.PostMapping
 class UserClientApplication
 
 fun main(args: Array<String>) {
-	runApplication<UserClientApplication>(*args)
+    runApplication<UserClientApplication>(*args)
 }
 
 @Component
 class UserGenerator(private val userClient: UserClient) {
 
-	private val logger = logger(UserGenerator::class)
-	private val faker = Faker()
+    private val logger = logger(UserGenerator::class)
+    private val faker = Faker()
 
-	@Scheduled(fixedDelay = 100)
-	fun createUser() = logger.info(
-		userClient.createUser(
-			CreateUserRequest(
-				username = faker.name().username(),
-				password = faker.internet().password()
-			)
-		)
-	)
+    @Scheduled(fixedDelay = 100)
+    fun createUser() = logger.info(
+        userClient.createUser(
+            CreateUserRequest(
+                username = faker.name().username(),
+                password = faker.internet().password()
+            )
+        )
+    )
 }
 
 data class CreateUserRequest(val username: String?, val password: String)
@@ -42,6 +42,6 @@ data class CreateUserRequest(val username: String?, val password: String)
 @FeignClient(name = "user-client", url = "http://localhost:8080")
 interface UserClient {
 
-	@PostMapping("/users")
-	fun createUser(createUserRequest: CreateUserRequest): String
+    @PostMapping("/users")
+    fun createUser(createUserRequest: CreateUserRequest): String
 }
