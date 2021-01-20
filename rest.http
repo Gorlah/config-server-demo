@@ -24,7 +24,7 @@ Accept: application/json
 ###
 
 # Get value of 'property' retrieved from Config Server
-GET http://localhost:8080/property
+GET http://localhost:8080/actuator/env/myproperty
 Accept: application/json
 
 ###

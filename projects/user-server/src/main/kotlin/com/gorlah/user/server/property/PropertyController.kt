@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController
 
 @RefreshScope
 @RestController
-class PropertyController(@Value("\${property}") private val property: String) {
+class PropertyController(@Value("\${myproperty}") private val myproperty: String) {
 
-    @GetMapping("/property")
-    fun hello() = property
+    @GetMapping("/myproperty")
+    fun myproperty() = myproperty
 }

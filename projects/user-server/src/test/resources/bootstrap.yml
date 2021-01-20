@@ -6,3 +6,6 @@ spring:
       enabled: false
     vault:
       enabled: false
+
+myproperty:
+  test

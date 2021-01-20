@@ -1,4 +1,4 @@
-property:
+myproperty:
   application-dev.yml
 
 management:
