@@ -3,6 +3,9 @@
     <module name="config-server-demo.projects.user-client.main" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.gorlah.user.client.UserClientApplication" />
     <option name="ALTERNATIVE_JRE_PATH" />
+    <envs>
+      <env name="DISCOVERY_URL" value="http://localhost:9761/eureka/" />
+    </envs>
     <method v="2">
       <option name="Make" enabled="true" />
     </method>

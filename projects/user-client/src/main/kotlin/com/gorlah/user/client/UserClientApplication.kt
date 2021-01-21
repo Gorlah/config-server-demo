@@ -39,7 +39,7 @@ class UserGenerator(private val userClient: UserClient) {
 
 data class CreateUserRequest(val username: String?, val password: String)
 
-@FeignClient(name = "user-client", url = "http://localhost:8080")
+@FeignClient("user-server")
 interface UserClient {
 
     @PostMapping("/users")

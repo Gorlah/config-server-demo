@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: user-client
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${DISCOVERY_URL}

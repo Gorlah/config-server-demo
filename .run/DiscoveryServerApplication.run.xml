@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="config-server-demo.projects.discovery-server.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.gorlah.server.discovery.DiscoveryServerApplication" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <envs>
+      <env name="SERVER_PORT" value="9761" />
+    </envs>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,2 +1,8 @@
 myproperty:
   application.yml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,info

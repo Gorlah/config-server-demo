@@ -1,12 +1,6 @@
 myproperty:
   application-dev.yml
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh
-
 server:
   error:
     include-message: always

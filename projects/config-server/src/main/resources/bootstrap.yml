@@ -11,3 +11,8 @@ spring:
         bootstrap: true
   profiles:
     active: native
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${DISCOVERY_URL}

@@ -4,8 +4,9 @@
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.gorlah.config.server.ConfigServerApplication" />
     <option name="ALTERNATIVE_JRE_PATH" />
     <envs>
-      <env name="SPRING_PROFILES_ACTIVE" value="dev" />
+      <env name="SERVER_PORT" value="9888" />
       <env name="CONFIGS_PATH" value="file:///$PROJECT_DIR$/configs" />
+      <env name="DISCOVERY_URL" value="http://localhost:9761/eureka/" />
     </envs>
     <method v="2">
       <option name="Make" enabled="true" />
