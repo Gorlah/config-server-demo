@@ -1,7 +1,3 @@
-logging:
-  level:
-    com.gorlah.user.client.UserClient: DEBUG
-
 spring:
   application:
     name: user-client

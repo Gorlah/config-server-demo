@@ -1,13 +1,11 @@
 # Get 'microservice' configs using 'dev' profile
 GET http://localhost:8888/microservice/dev
 Accept: application/json
-X-Config-Token: myroot
 
 ###
 
 GET http://localhost:8888/microservice-dev.yml
 Accept: application/json
-X-Config-Token: myroot
 
 ###
 
@@ -23,8 +21,8 @@ Accept: application/json
 
 ###
 
-# Get value of 'property' retrieved from Config Server
-GET http://localhost:8080/actuator/env/myproperty
+# Get value of 'myproperty' retrieved from Config Server
+GET http://localhost:8080/properties/myproperty
 Accept: application/json
 
 ###
