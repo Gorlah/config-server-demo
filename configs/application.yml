@@ -1,8 +1,12 @@
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.int[1,999999]}
+
 myproperty:
   application.yml
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh,info
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false

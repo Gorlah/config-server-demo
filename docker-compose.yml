@@ -3,7 +3,7 @@ services:
   vault:
     image: vault
     ports:
-      - 8200:8200
+      - 9200:8200
     cap_add:
       - IPC_LOCK
     environment:
@@ -13,4 +13,4 @@ services:
   mongo:
     image: mongo
     ports:
-      - 27017:27017
+      - 37017:27017
