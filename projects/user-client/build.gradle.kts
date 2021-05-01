@@ -14,6 +14,6 @@ dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
     implementation(kotlin("reflect"))
     implementation(kotlin("stdlib-jdk8"))
-    implementation(project(":projects:commons"))
+    implementation(project(":projects:commons-kotlin"))
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }

@@ -17,6 +17,7 @@ dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-vault-config")
     implementation(kotlin("reflect"))
     implementation(kotlin("stdlib-jdk8"))
-    implementation(project(":projects:commons"))
+    implementation(project(":projects:commons-boot"))
+    implementation(project(":projects:commons-kotlin"))
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }

@@ -1,7 +1,7 @@
 package com.gorlah.user.client
 
 import com.github.javafaker.Faker
-import com.gorlah.commons.logger
+import com.gorlah.commons.kotlin.logger
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.cloud.openfeign.EnableFeignClients
